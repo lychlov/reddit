@@ -40,4 +40,5 @@ fi
 
 sudo rabbitmqctl set_permissions -p / reddit ".*" ".*" ".*"
 sudo rabbitmq-plugins enable rabbitmq_management
+sudo chmod 777 /etc/rabbitmq/enable_plugins
 sudo service rabbitmq-server restart
