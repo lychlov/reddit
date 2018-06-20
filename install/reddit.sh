@@ -108,6 +108,21 @@ $RUNDIR/install_zookeeper.sh
 # install services (rabbitmq, postgres, memcached, etc.)
 $RUNDIR/install_services.sh
 
+# Configure Services
+###############################################################################
+
+# Configure Cassandra
+$RUNDIR/setup_cassandra.sh
+
+# Configure PostgreSQL
+$RUNDIR/setup_postgres.sh
+
+# Configure mcrouter
+$RUNDIR/setup_mcrouter.sh
+
+# Configure RabbitMQ
+$RUNDIR/setup_rabbitmq.sh
+
 ###############################################################################
 # Finished with install script
 ###############################################################################
